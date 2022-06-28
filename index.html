@@ -1,39 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <nav>
+    <img src="images/logo.svg" alt="logo" id="logo">
+    <ul id="links">
+      <div class="dropdownContainer">
+        <div class="dropdown" id="dropdown1">Features</div>
+        <ul class="dropdownMenu" id="dropdownMenu1">
+          <img src="images/icon-todo.svg" alt="icon-todo">
+          <li>Todo List</li>
+          <img src="images/icon-calendar.svg" alt="icon-calendar">
+          <li>Calendar</li>
+          <img src="images/icon-reminders.svg" alt="icon-reminders">
+          <li>Reminders</li>
+          <img src="images/icon-planning.svg" alt="icon-planning">
+          <li>Planning</li>
+        </ul>
+      </div>
+      <div class="dropdownContainer">
+        <div class="dropdown" id="dropdown2">Company</div>
+        <ul class="dropdownMenu" id="dropdownMenu2">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+    <ul id="userauth">
+      <li>Login</li>
+      <li id="register">Register</li>
+    </ul>
+    <button id="openMenu">
+      <div class="openMenuLine"></div>
+      <div class="openMenuLine"></div>
+      <div class="openMenuLine"></div>
+    </button>
+  </nav>
+  <nav id="nav2">
+    <div id="navBackdrop"></div>
+    <div id="navMobile">
+      <button id="closeMenu">
+        <div class="closeMenuLine" id="diagonal1"></div>
+        <div class="closeMenuLine" id="diagonal2"></div>
+      </button>
+      <ul id="mobileLinks">
+        <div class="dropdownContainer">
+          <div class="dropdown" id="dropdown3">Features</div>
+          <ul class="dropdownMenu" id="dropdownMenu3">
+            <img src="images/icon-todo.svg" alt="icon-todo">
+            <li>Todo List</li>
+            <img src="images/icon-calendar.svg" alt="icon-calendar">
+            <li>Calendar</li>
+            <img src="images/icon-reminders.svg" alt="icon-reminders">
+            <li>Reminders</li>
+            <img src="images/icon-planning.svg" alt="icon-planning">
+            <li>Planning</li>
+          </ul>
+        </div>
+        <div class="dropdownContainer">
+          <div class="dropdown" id="dropdown4">Company</div>
+          <ul class="dropdownMenu" id="dropdownMenu4">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <ul id="mobileUserAuth">
+        <li>Login</li>
+        <li id="register">Register</li>
+      </ul>
+    </div>
+  </nav>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section>
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button id="learnMoreButton">Learn more</button>
+      <div id="supports">
+        <img src="images/client-databiz.svg" alt="client-databiz" class="support">
+        <img src="images/client-audiophile.svg" alt="client-audiophile" class="support" id="clientAudiophile">
+        <img src="images/client-meet.svg" alt="client-meet" class="support">
+        <img src="images/client-maker.svg" alt="client-maker" class="support">
+      </div>
+    </section>
+    <img src="images/image-hero-desktop.png" alt="image-hero-desktop" id="imageHeroDesktop">
+    <script src="script.js"></script>
+  </main>
 </body>
+
 </html>
